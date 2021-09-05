@@ -27,10 +27,7 @@ class TFRecord:
         items_dict = {}
         for item in items:
             name = str(item.split('name')[1].split('"')[1])
-            print(name)
-            print(item.split('name')[1])
-            print(item.split('name')[1].split('id'))
-            print(item.split('name')[1].split('id')[1])
+            
             name_id = int(item.split('name')[1].split(": ")[3].split('}')[0])
 
             items_dict[name] = name_id
